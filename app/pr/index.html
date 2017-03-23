@@ -1,0 +1,87 @@
+
+
+<!-- ////////////////////////////////////////////////////////////////// -->
+
+<div class="jumbotron text-center">
+
+<section>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <form action="/upload" method="post">
+
+
+
+      <div class="input">
+        <label for="topic">topic</label>
+        <input type="checkbox" id="topic" name="topic" class="form-control" value="true">
+        </div>
+
+        <div class="input">
+            <label for="title">title</label>
+            <input type="text" id="title" name="title" class="form-control">
+        </div>
+
+        <div class="input">
+        <label for="group_id">group_id</label>
+        <select id="group_id" name="group_id" class="form-control">
+      <option value="all">ทั่วไป</option>
+      <option value="lib">สำนักหอสมุดกลาง</option>
+      <option value="it">ไอที</option>
+        </select>
+        </div>
+
+                <div class="input">
+            <label for="author">author</label>
+            <input type="text" id="author" name="author" class="form-control">
+        </div>
+        <div class="input">
+        <label for="userType">ประเภท User ที่จะส่ง</label>
+        <select id="userType" name="userType" class="form-control">
+        <option value="all">ทั้งหมด</option>
+      <option value="student">นักศึกษา</option>
+      <option value="person">บุคลากรทั้วไป</option>
+        </select>
+        </div>
+
+          <div class="input">
+        <label for="faculty">คณะ</label>
+        <select id="faculty" name="userType" class="form-control">
+      <option value="all">ทั้งหมด</option>
+      <option value="EN">วิศวกรรมศาสตร์</option>
+      <option value="ST">สถาปัตยกรรมศาสตร์</option>
+      <option value="IDED">ครุศาสตร์อุตสาหกรรม</option>
+      <option value="AU">เทคโนโลยีการเกษตร</option>
+      <option value="SI">เวิทยาศาสตร์</option>
+      <option value="ARGO">อุตสาหกรรมเกษตร</option>
+      <option value="IT">เทคโนโลยีสารสนเทศ</option>
+      <option value="EM">วิทยาลัยการบริหารและจัดการ</option>
+      <option value="IN">วิทยาลัยนานาชาติ</option>
+        </select>
+        </div>
+
+        <div class="input">
+        <label for="year">ชั้นปี</label>
+        <select id="year" name="year" class="form-control">
+        <option value="all">ทุกชั้นปี</option>
+      <option value="54">ปี 6</option>
+      <option value="55">ปี 5</option>
+      <option value="56">ปี 4</option>
+      <option value="57">ปี 3</option>
+      <option value="58">ปี 2</option>
+      <option value="59">ปี 1</option>
+        </select>
+        </div>
+    <div class="btn btn-primary btn-file">
+        <input type="file" name="filefield">
+    </div>     
+
+
+<div>
+ <button type="submit" class="btn btn-primary active">BUTTON</button>
+</div>
+</form>
+</section>
+   
+</div>
+
+
+
