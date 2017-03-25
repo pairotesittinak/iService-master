@@ -3,7 +3,13 @@
 <div class="container" ng-app="myApp" ng-controller="news.IndexController">
   <h2>ข่าวประชาสัมพันธ์</h2>
   
-<button class="btn btn-warning"}"><a ui-sref="pr">เริ่มข่าวใหม่</a></button>
+<!--<button type="button" class="mdl-button mdl-js-button mdl-button--raised"}"><a ui-sref="SendNews" >เริ่มข่าวใหม่</a></button>-->
+
+
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised"}"> <form action="./indextwo.html">
+    <input type="submit" value="เริ่มข่าวใหม่">
+</form></button>
+
   
 
 
@@ -68,7 +74,7 @@ description: <input type="text" ng-model="buttonUpdateNews.description" name="de
 
 <!-- SHOW ALL NEWS -->
   <div class="table-responsive" id="div-news-all" style="display: block;">   
-  <div class="well well-sm text-center" style="margin: 30px; background: #ff7f50; font-weight: bold;">ข่าวทั่วไป</div>         
+  <div class="well well-sm text-center" style="margin: 30px; background: #ff7f50; font-weight: bold; color: white;">ข่าวทั่วไป</div>         
   <table class="table">
     <thead>
       <tr>

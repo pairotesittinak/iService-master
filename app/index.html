@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>PR Central Library KMITL</title>
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+     
      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
     <link href="app-content/app.css" rel="stylesheet" />
@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-deep_orange.min.css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    
 
 </head>
 <body class="container">
@@ -22,7 +23,7 @@
   <h1>ระบบประชาสัมพันธ์</h1>
   <p>สำนักหอสมุดกลาง สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p> 
 </div>
-        <ul class="nav nav-tabs nav-justified">
+        <ul class="nav nav-tabs ">
             
             <li ng-class="{active: activeTab === 'news'}"><a ui-sref="news">news</a></li>
             <li ng-class="{active: activeTab === 'home'}"><a ui-sref="home">User Setting</a></li>
@@ -34,66 +35,18 @@
         </div>
           
     </header>
-<script src='//cloud.tinymce.com/stable/tinymce.min.js'></script>
-<script>tinymce.init({ selector:'textarea', 
-        plugins: "preview",
+<!-- Text Editor -->
 
-
-        });
-
-</script>
-<script>tinymce.init({ selector:'textarea', 
-        selector: "textarea",  // change this value according to your HTML
-  plugins: "preview",
-  menubar: "view",
-  toolbar: "preview"
-
-</script>
-
-  <script type="text/javascript">
-
-function ajaxLoad() {
-    var ed = tinyMCE.get('content');
-
-    // Do you ajax call here, window.setTimeout fakes ajax call
-    ed.setProgressState(1); // Show progress
-    window.setTimeout(function() {
-        ed.setProgressState(0); // Hide progress
-        ed.setContent('HTML content that got passed from server.');
-    }, 3000);
-}
-function show(){
-    var ed=tinymce.get('content');
-    alert(ed.getContent());
-}
-
-function ajaxSave() {
-    var ed = tinyMCE.get('content');
-
-    // Do you ajax call here, window.setTimeout fakes ajax call
-    ed.setProgressState(1); // Show progress
-    window.setTimeout(function() {
-        ed.setProgressState(0); // Hide progress
-        alert(ed.getContent());
-    }, 3000);
-}
-</script>
-     
-
-
-<form method="post" action="somepage">
-    <textarea name="content" style="width:100%">
-    </textarea>
-</form>
-<center><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="show()" >Send</button></center>
-
+      
+<!-- End -->
     <!-- main -->
-    <main ui-view></main>
+    <main ui-view>
+    
+    </main>
     <!-- footer -->
-    <footer></footer>
     <!-- external scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <!-- application scripts -->
     <script src="app.js"></script>

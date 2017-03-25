@@ -1,0 +1,18 @@
+{
+  "name": "PRSC-PROJECT",
+  "description": "PRSC-PROJECT",
+  "main": "./app/server.js",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": ">=1.4.0",
+    "tinymce": "^4.5.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

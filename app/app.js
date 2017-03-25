@@ -27,6 +27,13 @@
                 controllerAs: 'vm',
                 data: { activeTab: 'pr' }
             })
+            .state('SendNews', {
+                url: '/SendNews',
+                templateUrl: 'SendNews/index.html',
+            //     controller: 'SendNews.IndexController',
+            //     controllerAs: 'vm',
+            //     data: { activeTab: 'SendNews' }
+            })
             .state('home', {
                 url: '/home',
                 templateUrl: 'home/index.html',
